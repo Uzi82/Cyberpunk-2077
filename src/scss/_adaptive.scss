@@ -1,0 +1,95 @@
+@media (max-width: 1280px) and (min-width: 1024px) {
+	:root {
+		--margin_x: 36px;
+	}
+	.header {
+		margin: 0 36px 0 36px;
+	}
+	.intro {
+		height: 1000px;
+		&__slider {
+			&-img {
+				width: 100vw;
+				height: 1000px;
+			}
+			&-imgDisappear {
+				width: 100vw;
+				height: 1000px;
+			}
+		}
+		&__box {
+			top: auto;
+		}
+		&__text {
+			height: 1000px;
+		}
+	}
+	.description {
+		padding: 70px var(--margin_x) 70px var(--margin_x);
+		width: fit-content;
+		&__gallery {
+			flex-direction: column;
+			&-small {
+				flex-direction: row;
+				gap: 32px;
+			}
+		}
+	}
+	.promotion {
+		&__flex {
+			display: block;
+			&__content {
+				display: block;
+				padding: 15px var(--margin_x) 70px var(--margin_x);
+				&__header {
+					width: 47%;
+				}
+				&__paragraph {
+					width: 47%;
+				}
+				&__flex {
+					width: 94%;
+					&-img {
+						position: absolute;
+						left: 50vw;
+						translate: 0 -35vh;
+						width: 460px;
+						height: 858px;
+						background-image: url(/public/images/PS5XBOXX2.png);
+					}
+				}
+			}
+		}
+	}
+	.HP {
+		&__flex {
+			&__content {
+				&__leftside {
+					&-screen {
+						width: 460px;
+						height: auto;
+					}
+					&__logos {
+						width: auto;
+						flex-direction: column;
+					}
+				}
+			}
+		}
+	}
+	.buy {
+		&-img {
+			width: 30%;
+		}
+		&__text {
+			width: 70%;
+		}
+	}
+}
+@media (max-width: 1023px) and (min-width: 767px) {
+	.header{
+		flex-direction: column;
+		margin: 0 auto 0 auto;
+	}
+	
+}

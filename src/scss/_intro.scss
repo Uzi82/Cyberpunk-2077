@@ -1,0 +1,89 @@
+.intro {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	z-index: 1;
+	&__slider {
+		user-select: none;
+		&-img {
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+			object-fit: cover;
+			z-index: 2;
+			animation-name: appear;
+			animation-duration: 1s;
+		}
+		&-imgDisappear {
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+			z-index: 2;
+			opacity: 0;
+			animation-name: disappear;
+			animation-duration: 300ms;
+		}
+	}
+	&__text {
+		position: absolute;
+		background: none;
+		z-index: 100;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		align-items: end;
+		&__box {
+			margin-right: var(--margin_x);
+			margin-left: auto;
+			width: 624px;
+			height: 369px;
+			background-color: var(--yellow);
+			clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 85%, 90% 100%, 0 100%, 0 100%, 0 15%);
+			&__container{
+				width: 100%;
+				background: none;
+				&__box {
+					width: fit-content;
+					margin: 70px;
+					display: flex;
+					flex-direction: column;
+					background: none;
+					&-header {
+						font-size: var(--header);
+						background: none;
+						font-weight: 400;
+						line-height: normal;
+					}
+					&-button {
+						width: fit-content;
+						font-size: var(--paragraph);
+						margin-top: 25px;
+						padding-top: 20px;
+						padding-bottom: 20px;
+						padding-right: 50px;
+						padding-left: 50px;
+						background-color: black;
+						color: var(--yellow);
+					}
+				}
+			}
+		}
+	}
+	
+}
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes disappear {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}

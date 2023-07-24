@@ -1,0 +1,27 @@
+header {
+	position: absolute;
+	width: 100vw;
+	margin-top: 20px;
+	z-index: 100;
+	background: none;
+}
+.header {
+	&>a{background: none;&>svg{background: none;}}
+	background: none;
+	margin-left: var(--margin_x);
+	margin-right: var(--margin_x);
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	&__nav {
+		background: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 40px;
+		&>a{background: none;&>svg{background: none;}}
+	}
+}
